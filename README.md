@@ -283,10 +283,6 @@ Tests for parameter pollution by adding suspicious fields like `isAdmin`, `role`
 
 Contributions are welcome! This is a preliminary script with lots of room to expand and improve.
 
-## License
-
-MIT License
-
 ## Disclaimer
 
 This tool is for authorized security testing only. Unauthorized use against systems you don't own or have explicit permission to test is illegal. The authors are not responsible for misuse of this tool.
