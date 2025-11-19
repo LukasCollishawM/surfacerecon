@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surfacerecon"
+version = "1.0.0"
+description = "Automated web-API reconnaissance and vulnerability probing tool"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "surfacerecon Team"}
+]
+keywords = ["security", "reconnaissance", "api", "vulnerability", "testing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+]
+
+dependencies = [
+    "playwright>=1.40.0",
+    "httpx>=0.25.0",
+    "deepdiff>=6.7.0",
+    "click>=8.1.0",
+    "pydantic>=2.5.0",
+]
+
+[project.scripts]
+surfacerecon = "surfacerecon.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+surfacerecon = ["py.typed"]
+

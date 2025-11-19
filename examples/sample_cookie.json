@@ -1,0 +1,23 @@
+[
+  {
+    "name": "session",
+    "value": "your-session-token-here",
+    "domain": ".example.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "auth_token",
+    "value": "your-auth-token-here",
+    "domain": ".example.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Strict"
+  }
+]
+
